@@ -20,7 +20,7 @@ export const counterSlice = createSlice({
       }
     },
     divided: (state) => {
-      if (state.value > 1) {
+      if (state.value >= 2) {
         state.value /= 2;
       }
     },
