@@ -66,3 +66,9 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+.inputbox {
+  background-color: #d39d9d;
+  display: block;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+}

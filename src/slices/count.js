@@ -5,23 +5,24 @@ export const counterSlice = createSlice({
   initialState: {
     value: 0,
   },
+
   reducers: {
-    increment: (state) => {
-      state.value++;
+    increment: (state, action) => {
+      state.value += action.payload;
       console.log(state.value);
     },
-    decrement: (state) => {
-      state.value--;
+    decrement: (state, action) => {
+      state.value -= action.payload;
       console.log(state.value);
     },
-    multiple: (state) => {
+    multiple: (state, action) => {
       if (state.value > 0) {
-        state.value *= 2;
+        state.value *= action.payload;
       }
     },
-    divided: (state) => {
+    divided: (state, action) => {
       if (state.value >= 2) {
-        state.value /= 2;
+        state.value /= action.payload;
       }
     },
   },
