@@ -71,4 +71,5 @@ button:focus-visible {
   display: block;
   margin-bottom: 20px;
   padding: 10px 20px;
+  width: 300px;
 }

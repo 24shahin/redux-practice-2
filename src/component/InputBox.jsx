@@ -11,6 +11,7 @@ function InputBox() {
   let dispatch = useDispatch();
   return (
     <>
+      <h2>Redux Practice</h2>
       <input type="text" className="inputbox" onChange={handlechange} />
       <button onClick={() => dispatch(increment(+input))}>Plus</button>
       <button onClick={() => dispatch(divided(+input))}>Divided</button>

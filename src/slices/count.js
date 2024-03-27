@@ -12,8 +12,10 @@ export const counterSlice = createSlice({
       console.log(state.value);
     },
     decrement: (state, action) => {
-      state.value -= action.payload;
-      console.log(state.value);
+      if (state.value > 0) {
+        state.value -= action.payload;
+        console.log(state.value);
+      }
     },
     multiple: (state, action) => {
       if (state.value > 0) {
